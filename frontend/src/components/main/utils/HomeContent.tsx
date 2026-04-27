@@ -52,6 +52,7 @@ export default function HomeContent() {
 
     const [globeLoaded, setGlobeLoaded] = useState(false);
 
+    // to do: fix snapping
     return (
         <div className="relative h-screen w-full snap-y snap-mandatory px-10">
             <div className="flex h-screen w-full snap-center flex-col items-center justify-around overflow-y-scroll md:flex-row md:gap-1">
@@ -84,7 +85,7 @@ export default function HomeContent() {
                         </h2>
                     </motion.div>
                 </div>
-                <div className="relative grid h-screen w-full place-items-center p-10 md:w-2/3">
+                <div className="relative grid h-screen w-full z-10 place-items-center p-10 md:w-2/3">
                     {!globeLoaded && (
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="h-64 w-64 animate-pulse rounded-full bg-neutral-200/50 blur-xl md:h-96 md:w-96 dark:bg-neutral-800/50" />

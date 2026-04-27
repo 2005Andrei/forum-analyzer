@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    { "id": "p1", "type": "Person", "label": "Ion Popescu", "summary": "CEO of SC EUROCONSTRUCT SRL. Currently under investigation for domestic violence.", "url": "N/A" },
+    { "id": "c1", "type": "Company", "label": "SC EUROCONSTRUCT SRL", "summary": "Construction firm based in Brașov. Won 15 state contracts in 2023.", "url": "https://mfinante.gov.ro/cui/123456" },
+    { "id": "case1", "type": "CourtCase", "label": "Dosar 145/2024", "summary": "Criminal case: Domestic Violence. Status: Ongoing.", "url": "https://portal.just.ro/145/2024" },
+    { "id": "p2", "type": "Person", "label": "Maria Ionescu", "summary": "Judge at the Brașov Tribunal. Presiding over Dosar 145/2024.", "url": "N/A" },
+    { "id": "doc1", "type": "Document", "label": "Declarație Avere 2023", "summary": "Declares 3 properties, 2 luxury cars, and 500k EUR in accounts.", "url": "https://integritate.eu/da/2023/ion_popescu.pdf" },
+    { "id": "soc1", "type": "SocialProfile", "label": "IG: @ion_popescu_boss", "summary": "Private account. 4,500 followers. Profile picture matches public ID.", "url": "https://instagram.com/ion_popescu_boss" },
+    { "id": "media1", "type": "Media", "label": "Ziarul Local: Scandal la Euroconstruct", "summary": "Local investigative article detailing the arrest of the CEO and linking him to the Brașov mayor.", "url": "https://ziarullocal.ro/scandal" }
+  ],
+  "links": [
+    { "source": "p1", "target": "c1", "label": "ADMINISTREAZA" },
+    { "source": "p1", "target": "case1", "label": "INCULPAT_IN" },
+    { "source": "p2", "target": "case1", "label": "JUDECA" },
+    { "source": "p1", "target": "doc1", "label": "A_DEPUS" },
+    { "source": "p1", "target": "soc1", "label": "DETINE" },
+    { "source": "media1", "target": "p1", "label": "MENTIONEAZA" },
+    { "source": "media1", "target": "c1", "label": "MENTIONEAZA" }
+  ]
+}

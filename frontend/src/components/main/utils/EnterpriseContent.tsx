@@ -46,21 +46,20 @@ export default function EnterpriseContent() {
                     images={images}
                 />
 
-                <div className="relative h-screen w-full snap-y snap-mandatory overflow-y-scroll">
+                <div className="relative h-screen w-full snap-y snap-mandatory overflow-y-scroll text-white dark:text-black">
                     <div className="grid h-screen snap-center place-items-center">
                         <div className="relative">
                             <h2 className="relative z-20 mx-auto max-w-4xl text-center text-2xl font-bold text-balance text-white md:text-4xl lg:text-6xl">
                                 We're so tuff. This service is{" "}
                                 <span className="relative z-20 inline-block rounded-xl bg-blue-500/40 px-4 py-1 text-white underline decoration-sky-500 decoration-[6px] underline-offset-[16px] backdrop-blur-sm">
-                                    moment
+                                    ass
                                 </span>
                                 .
                             </h2>
                             <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
-                                You are not your job, you&apos;re not how much
-                                money you have in the bank. You are not the car
-                                you drive. You&apos;re not the contents of your
-                                wallet.
+                                Romania is an ahh country lol. More dummy but
+                                accurate content. Again, useless text that is
+                                long and useless. In fine, dati scroll
                             </p>
 
                             <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -76,7 +75,7 @@ export default function EnterpriseContent() {
 
                     <div className="grid h-screen snap-center place-items-center">
                         <section className="relative z-20 grid h-100 w-full place-items-center">
-                            <div className="h-full w-200 text-justify">
+                            <div className="h-full w-200 text-justify text-black dark:text-white">
                                 Ma gandeam sa pun aici continut despre
                                 dashboard-ul profesional la "enterprise lvl",
                                 iar pozele pe fundal ar fi screenshot-uri cu

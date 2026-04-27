@@ -1,5 +1,5 @@
 def main():
-    print("Hello from scraper!")
+    print("Hello from producers!")
 
 
 if __name__ == "__main__":

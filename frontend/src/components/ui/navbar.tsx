@@ -104,7 +104,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
             className={cn(
                 // Changed bg-transparent to explicit dark transparent handling
                 // Removed light mode bg-white logic
-                "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-sm bg-gray-950 px-20 py-2 lg:flex", // rounded-full - changed that
+                "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-sm bg-black-500 px-20 py-2 lg:flex", // rounded-full - changed that
                 visible && "bg-neutral-950/80",
                 className,
             )}

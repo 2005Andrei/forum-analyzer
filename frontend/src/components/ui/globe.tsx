@@ -16,7 +16,7 @@ declare module "@react-three/fiber" {
 extend({ ThreeGlobe: ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;
-const aspect = 1.2;
+// const aspect = 1.2;
 const cameraZ = 300;
 
 type Position = {
@@ -245,7 +245,7 @@ export function WebGLRendererConfig() {
 
     useEffect(() => {
         gl.setPixelRatio(window.devicePixelRatio);
-        gl.setSize(size.width, size.height);
+        // gl.setSize(size.width, size.height);
         gl.setClearColor(0xffaaff, 0);
     }, []);
 
@@ -258,9 +258,14 @@ export function World(props: WorldProps) {
     scene.fog = new Fog(0xffffff, 400, 2000);
     return (
         <Canvas
-            className="z-999"
+            className="z-[999]"
             scene={scene}
-            camera={new PerspectiveCamera(50, aspect, 180, 1800)}
+            camera={{
+                fov: 50,
+                near: 180,
+                far: 1800,
+                position: [0, 0, cameraZ],
+            }}
             onCreated={() => {
                 if (onReady) onReady();
             }}

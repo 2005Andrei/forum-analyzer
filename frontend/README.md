@@ -1,1 +1,1 @@
-this frontend is lowkey lame but it's ok
+this frontend is lame but it's ok

@@ -5,7 +5,7 @@ const content = [
     {
         title: "1. Idea first",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "arata cam nasol pagina asta, adk as mai vrea sa pun un efect cv pe fundal, sunt multe buguri momentan",
         content: (
             <div className="flex h-full w-full items-center justify-center text-white">
                 Some amazing stuff
