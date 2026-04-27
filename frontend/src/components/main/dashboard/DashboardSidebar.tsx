@@ -1,20 +1,29 @@
-import { Bell, LayoutDashboard, Settings } from "lucide-react";
+import { Bell, ExpandIcon, LayoutDashboard, Settings } from "lucide-react";
 import "./css/sidebar.css";
 import { SidebarLinks } from "./SidebarLinks";
+import { Search, Download } from "lucide-react";
 
 export default function DashboardSidebar() {
     const data = [
         {
-            title: "dashboard",
-            link: "/search", // this would focus on the search bar
+            title: "Search",
+            link: "/search",
+            icon: Search,
+        },
+        {
+            title: "jobs",
+            link: "/jobs",
+            icon: ExpandIcon,
         },
         {
             title: "export data",
             link: "/export",
+            icon: Download,
         },
         {
             title: "settings",
             link: "/settings",
+            icon: Settings,
         },
     ];
 
