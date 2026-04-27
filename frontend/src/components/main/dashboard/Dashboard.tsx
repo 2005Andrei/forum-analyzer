@@ -5,6 +5,7 @@ import {
     ResizablePanelGroup,
 } from "../../ui/resizable";
 import DashboardContent from "./DashboardContent";
+import { useState } from "react";
 
 export default function Dashboard() {
     // no more reddit, atm I need some mock data to represent as nodes

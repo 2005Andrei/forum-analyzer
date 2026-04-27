@@ -3,22 +3,7 @@ interface links {
     call: React.FunctionComponent;
 }
 
-export default function DashboardNav() {
-    const data = [
-        {
-            text: "Board 1",
-            call: () => console.log("nothing"),
-        },
-        {
-            text: "Board 2",
-            call: () => console.log("nothing"),
-        },
-        {
-            text: "Board 3",
-            call: () => console.log("nothing"),
-        },
-    ];
-
+export default function DashboardNav({ data, activeBoard, setActiveBoard }) {
     return (
         <header className="w-full flex flex-col">
             <div className="w-full bg-sky-950 px-6 py-4 text-center text-sm font-medium text-white">
@@ -39,7 +24,7 @@ export default function DashboardNav() {
                     {data.map((item, idx) => (
                         <li key={item.id || idx}>
                             <button
-                                onClick={item.call}
+                                onClick={() => setActiveBoard(item.id)}
                                 className="text-sm font-medium transition-all ease-in duration-100 hover:opacity-70 focus:outline-none focus-visible:ring-sky-950 hover:cursor-pointer"
                             >
                                 {item.text}

@@ -109,7 +109,7 @@ export default function Board() {
                         {selectedNode.url !== "N/A" && (
                             <div>
                                 <h3 className="text-sm font-semibold text-white-700 mb-1">
-                                    Source Link
+                                    Source:
                                 </h3>
                                 <a
                                     href={selectedNode.url}
@@ -124,7 +124,7 @@ export default function Board() {
 
                         <div className="mt-8 pt-4 border-t border-slate-100">
                             <span className="text-xs text-slate-400">
-                                Node ID: {selectedNode.id}
+                                ID: {selectedNode.id}
                             </span>
                         </div>
                     </div>
